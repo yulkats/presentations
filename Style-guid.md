@@ -470,7 +470,7 @@ DELETE /management/places/deleteAll
 
 ● Response Message: &quot;Place with _\&lt;id\&gt;_ already has this status: _\&lt;status\&gt;&quot;_
 
-1. TagNotFoundException
+34. TagNotFoundException
 
 ● Description: occurs when user try to get a tag that isn&#39;t in the database.
 
@@ -486,7 +486,7 @@ POST /tipsandtricks
 
 ● Response Message: &quot;Tips &amp; Tricks should have at least one valid tag._&quot;_
 
-1. UserAlreadyHasHabitAssignedException
+35. UserAlreadyHasHabitAssignedException
 
 ● Description: occurs when user try to assign the habit that is already assigned.
 
@@ -500,7 +500,7 @@ POST /tipsandtricks
 
 &quot;User already assigned and suspended this habit for today with id: {id}._&quot;_
 
-1. UserGoalStatusNotUpdatedException
+36. UserGoalStatusNotUpdatedException
 
 ● Description: occurs when user try to update goal that doesn&#39;t exist in the database.
 
@@ -510,7 +510,7 @@ POST /tipsandtricks
 
 ● Response Message: &quot;This user has no goal with id: {goalId}&quot;
 
-1. UserHasNoAvailableGoalsException
+37. UserHasNoAvailableGoalsException
 
 ● Description: occurs when user hasn&#39;t available goals.
 
@@ -520,7 +520,7 @@ POST /tipsandtricks
 
 ● Response Message: &quot;This user is tracking all available goals&quot;
 
-1. UserHasNoGoalsException
+38. UserHasNoGoalsException
 
 ● Description: occurs when user hasn&#39;t any goals.
 
@@ -532,7 +532,7 @@ POST /user/{userId}/goals
 
 ● Response Message: &quot;This user hasn&#39;t selected any goals yet&quot;
 
-1. WrongEmailException
+39. WrongEmailException
 
 ● Description: occurs when user doesn&#39;t exist by given email.
 
@@ -540,7 +540,7 @@ POST /user/{userId}/goals
 
 ● Message: The user doesn&#39;t exist by this email.
 
-1. WrongIdException
+40. WrongIdException
 
 ● Description: occurs when in some logic we have bad ID.
 
@@ -558,13 +558,13 @@ POST /user/{userId}/goals
 
 ● Status Code: 400 – Bad Request
 
-1. AuthenticationException
+2. AuthenticationException
 
 ● Description: occurs when unauthorized user try to perform actions that are available only for authorized users.
 
 ● Status Code: 401 – Unauthorized
 
-1. DateTimeParseException
+3. DateTimeParseException
 
 ● Description: occurs when user try to pass date with wrong format.
 
