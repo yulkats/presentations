@@ -1,4 +1,4 @@
-**GreenCity**
+*GreenCity*
 
 **Custom Exceptions:**
 
@@ -12,7 +12,7 @@
 
 ● Response Message: -
 
-1. BadRefreshTokenException
+2. BadRefreshTokenException
 
 ● Description: occurs when user try to refresh token with bad refresh token.
 
@@ -22,7 +22,7 @@
 
 ● Response Message: &quot;Refresh token not valid!&quot;
 
-1. BadVerifyEmailTokenException
+3. BadVerifyEmailTokenException
 
 ● Description: occurs when we user try to verify email with bad token.
 
@@ -36,7 +36,7 @@ GET /ownSecurity/verifyEmail
 
 &quot;No any email to verify with this token!&quot;
 
-1. EmailNotVerified
+4. EmailNotVerified
 
 ● Description: occurs when user try to sign in before email verification.
 
@@ -46,7 +46,7 @@ GET /ownSecurity/verifyEmail
 
 ● Message: &quot;You should verify your email first, check your email box!&quot;
 
-1. EventCreationException
+5. EventCreationException
 
 ● Description: occurs when event instance cannot be created.
 
@@ -56,7 +56,7 @@ GET /ownSecurity/verifyEmail
 
 ● Message: &quot;Can not create instance of events, used constructor that differ from events superclass.&quot;
 
-1. NotCurrentUserException
+6. NotCurrentUserException
 
 ● Description: occurs when user try to perform some action with data of other user.
 
@@ -66,7 +66,7 @@ GET /ownSecurity/verifyEmail
 
 ● Message: &quot;You can&#39;t perform actions with the data of other user&quot;
 
-1. NotDeleteLastHabit
+7. NotDeleteLastHabit
 
 ● Description: -
 
@@ -76,7 +76,7 @@ GET /ownSecurity/verifyEmail
 
 ● Message: -
 
-1. PasswordDoNotMatchesException
+8. PasswordDoNotMatchesException
 
 ● Description: occurs when user&#39;s passwords don&#39;t matches.
 
@@ -86,7 +86,7 @@ GET /ownSecurity/verifyEmail
 
 &quot;The password doesn&#39;t match&quot; – 400 - Bad Request
 
-1. TagNotFoundDuringValidation
+9. TagNotFoundDuringValidation
 
 ● Description: occurs when user try to get a tag that isn&#39;t in database.
 
@@ -96,7 +96,7 @@ GET /ownSecurity/verifyEmail
 
 ● Message: &quot;Tips &amp; Tricks should have at least one valid tag.&quot;
 
-1. UserActivationEmailTokenExpiredException
+10. UserActivationEmailTokenExpiredException
 
 ● Description: occurs when user try to verify email with token that has expired.
 
@@ -108,7 +108,7 @@ GET /ownSecurity/verifyEmail
 
 ● Message: &quot;User late with verify. Token is invalid.&quot;
 
-1. UserAlreadyRegisteredException
+11. UserAlreadyRegisteredException
 
 ● Description: occurs when user try to sign-up with email that already registered.
 
@@ -118,7 +118,7 @@ GET /ownSecurity/verifyEmail
 
 ● Message: &quot;User with this email is already registered&quot;
 
-1. UserBlockedException
+12. UserBlockedException
 
 ● Description: occurs when blocked user try to add place or leave comment.
 
@@ -134,7 +134,7 @@ GET /ownSecurity/updateAccessToken
 
 &quot;User is deactivated&quot;
 
-1. UserDeactivatedException
+13. UserDeactivatedException
 
 ● Description: occurs when blocked user try to sign-in to deactivated account.
 
@@ -148,7 +148,7 @@ GET /ownSecurity/updateAccessToken
 
 ● Message: &quot;User is deactivated&quot;
 
-1. UserGoalNotSavedException
+14. UserGoalNotSavedException
 
 ● Description: -
 
@@ -158,7 +158,7 @@ GET /ownSecurity/updateAccessToken
 
 ● Message: -
 
-1. WrongCountOfTagsException
+15. WrongCountOfTagsException
 
 ● Description: occurs when user try to receive less than one tag or more than tree.
 
@@ -168,7 +168,7 @@ GET /ownSecurity/updateAccessToken
 
 ● Message: &quot;Count of tags should be at least one but not more three&quot;
 
-1. WrongPasswordException
+16. WrongPasswordException
 
 ● Description: occurs when user&#39;s password is wrong.
 
@@ -178,7 +178,7 @@ GET /ownSecurity/updateAccessToken
 
 ● Message: &quot;Bad password&quot;
 
-1. BadCategoryRequestException
+17. BadCategoryRequestException
 
 ● Description: occurs when user try to save category with bad parameters.
 
@@ -188,7 +188,7 @@ GET /ownSecurity/updateAccessToken
 
 ● Message: &quot;Category by this name already exists.&quot;
 
-1. BadRequestException
+18. BadRequestException
 
 ● Description: occurs when user try to pass bad request.
 
@@ -252,7 +252,7 @@ DELETE /tipsandtricks/comments– &quot;Current user has no permission for this 
 
 PATCH /user/profilePicture– &quot;Image should be download, PNG or JPEG&quot;.
 
-1. BadSocialNetworkLinksException
+19. BadSocialNetworkLinksException
 
 ● Description: occurs when we receive wrong social network links.
 
@@ -264,7 +264,7 @@ PATCH /user/profilePicture– &quot;Image should be download, PNG or JPEG&quot;.
 
 &quot;User cannot add the same social network links&quot;
 
-1. BadUpdateRequestException
+20. BadUpdateRequestException
 
 ● Description: occurs when we admin/moderator try to update himself.
 
@@ -274,7 +274,7 @@ PATCH /user/profilePicture– &quot;Image should be download, PNG or JPEG&quot;.
 
 ● Response Message: &quot;User can&#39;t update yourself&quot;
 
-1. DuplicatedTagException
+21. DuplicatedTagException
 
 ● Description: occurs when user try to use not unique (duplicated) tags.
 
@@ -284,7 +284,7 @@ PATCH /user/profilePicture– &quot;Image should be download, PNG or JPEG&quot;.
 
 ● Response Message: &quot;Tips &amp; Tricks tags should be unique&quot;
 
-1. GoalNotFoundException
+22. GoalNotFoundException
 
 ● Description: occurs when user try to use non-existsing goal.
 
@@ -294,7 +294,7 @@ PATCH /user/profilePicture– &quot;Image should be download, PNG or JPEG&quot;.
 
 ● Response Message: &quot;There is no goal for such language&quot;
 
-1. InvalidNumberOfTagsException
+23. InvalidNumberOfTagsException
 
 ● Description: occurs when user try to use more than 3 tags.
 
@@ -304,7 +304,7 @@ PATCH /user/profilePicture– &quot;Image should be download, PNG or JPEG&quot;.
 
 ● Response Message: &quot;Invalid tags. You must have less than 3 tags&quot;
 
-1. InvalidUnsubscribeToken
+24. InvalidUnsubscribeToken
 
 ● Description: occurs when user try to use invalid unsubscribe token.
 
@@ -314,7 +314,7 @@ PATCH /user/profilePicture– &quot;Image should be download, PNG or JPEG&quot;.
 
 ● Response Message: &quot;Invalid unsubscribe token&quot;
 
-1. InvalidURLException
+25. InvalidURLException
 
 ● Description: occurs when we receive a malformed URL or received string could not be parse as a URI reference.
 
@@ -328,7 +328,7 @@ POST /tipsandtricks
 
 &quot;The string could not be parsed as a URI reference&quot;
 
-1. LanguageNotFoundException
+26. LanguageNotFoundException
 
 ● Description: occurs when user try to save object with language code that doesn&#39;t exist in database.
 
@@ -344,7 +344,7 @@ POST /management/tipsandtricks
 
 ● Response Message: &quot;Given language code is not supported&quot;
 
-1. LowRoleLevelException
+27. LowRoleLevelException
 
 ● Description: occurs when moderator try to update user status of admin or another moderator.
 
@@ -354,7 +354,7 @@ POST /management/tipsandtricks
 
 ● Response Message: &quot;Impossible to update status admin or moderator&quot;
 
-1. NewsSubscriberPresentException
+28. NewsSubscriberPresentException
 
 ● Description: occurs when user try to subscribe or unsubscribe news
 
@@ -370,7 +370,7 @@ GET /newsSubscriber/unsubscribe
 
 &quot;Subscriber with this email address not found in the database&quot;
 
-1. NotDeletedException
+29. NotDeletedException
 
 ● Description: occurs when user try to delete some object, but such object isn&#39;t exist
 
@@ -388,7 +388,7 @@ DELETE /management/habits/deleteAll-&quot;Status of user habit wasn&#39;t delete
 
 DELETE /user/{userId}/userFriend/{friendId}-&quot;You don&#39;t have friend with this id: {friendId}&quot;
 
-1. NotFoundException
+30. NotFoundException
 
 ● Description: occurs when we send a request (for example: _findById_) and there is no record with this id.
 
@@ -398,7 +398,7 @@ DELETE /user/{userId}/userFriend/{friendId}-&quot;You don&#39;t have friend with
 
 ● Message: The messages with different entities is very similar to each other. It looks like that: _&quot;\&lt;entity name\&gt;_ does not exist by this id: _\&lt;entity id\&gt;&quot;_ (Example: &quot;The _discount_ does not exist by this id: _5_&quot; or &quot;The _comment_ with entered id doesn&#39;t exist&quot;)
 
-1. NotSavedException
+31. NotSavedException
 
 ● Description: occurs when user try to save obejct, but such object already exists.
 
@@ -442,7 +442,7 @@ POST /management/socialnetworksimages – &quot;Social network image hasn&#39;t 
 
 POST /tipsandtricks – &quot;Tips &amp; Tricks advice hasn&#39;t been saved due to constraint violation&quot;
 
-1. NotUpdatedException
+32. NotUpdatedException
 
 ● Description: occurs when we try to update some obejct, but such object doesn&#39;t exist.
 
@@ -452,7 +452,7 @@ POST /tipsandtricks – &quot;Tips &amp; Tricks advice hasn&#39;t been saved due
 
 ● Message: The messages with different entities is very similar to each other. It looks like that: _&quot;\&lt;entity name\&gt;_ does not exist by this id: _\&lt;entity id\&gt;&quot;_ (Example: &quot;The _discount_ does not exist by this id: _5_&quot; or &quot;The _comment_ with entered id doesn&#39;t exist&quot;)
 
-1. PlaceStatusException
+33. PlaceStatusException
 
 ● Description: occurs when user try to add status to place, but this place has already this status.
 
