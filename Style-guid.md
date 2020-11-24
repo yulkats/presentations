@@ -1,6 +1,6 @@
 # GreenCity
 
-**Custom Exceptions:**
+### Custom Exceptions:
 
 1. BadPlaceRequestException
 
@@ -548,7 +548,7 @@ POST /user/{userId}/goals
 
 ● Message: The \&lt;_entity_\&gt; does not exist by this id: _\&lt;id\&gt;._
 
-**Built-In Exceptions:**
+### Built-In Exceptions:
 
 1. ConstraintViolationException
 
