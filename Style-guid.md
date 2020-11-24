@@ -4,13 +4,13 @@
 
 1. BadPlaceRequestException
 
-● Description: occurs when user try to save place with bad parameters.
+  ● Description: occurs when user try to save place with bad parameters.
 
-● Possible Occurance: -
+  ● Possible Occurance: -
 
-● Status Code: 400 – Bad Request
+  ● Status Code: 400 – Bad Request
 
-● Response Message: -
+  ● Response Message: -
 
 2. BadRefreshTokenException
 
