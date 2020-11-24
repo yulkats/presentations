@@ -406,10 +406,6 @@ DELETE /user/{userId}/userFriend/{friendId}-&quot;You don&#39;t have friend with
 
 ● Possible Occurance/Message:
 
-May occur while converting image -&quot;Cannot convert to BASE64 image&quot;
-
-![](RackMultipart20201124-4-f0be4a_html_9cde4ec593a0689.gif)POST /econews
-
 PUT /management/eco-news
 
 PUT /econews/update
@@ -418,9 +414,7 @@ POST /management/habits/save
 
 PUT /management/habits/update
 
- ![](RackMultipart20201124-4-f0be4a_html_d3a09ce9bdf767d8.gif)
-
-POST /management/socialnetworksimages &quot;File hasn&#39;t been saved&quot;
+POST /management/socialnetworksi
 
 PUT /user/profile
 
@@ -430,7 +424,7 @@ POST /tipsandtricks
 
 POST /management/tipsandtricks
 
-PATCH /user/profilePicture
+PATCH /user/profilePicture mages &quot;File hasn&#39;t been saved&quot;
 
 POST /econews - &quot;Eco news haven&#39;t been saved because of constraint violation&quot;
 
@@ -450,7 +444,7 @@ POST /tipsandtricks – &quot;Tips &amp; Tricks advice hasn&#39;t been saved due
 
 ● Possible Occurance: may occur in requests where server needs to send a query to DB to retrive the record by ID (primary key). It could be performed with every entity in application.
 
-● Message: The messages with different entities is very similar to each other. It looks like that: _&quot;\&lt;entity name\&gt;_ does not exist by this id: _\&lt;entity id\&gt;&quot;_ (Example: &quot;The _discount_ does not exist by this id: _5_&quot; or &quot;The _comment_ with entered id doesn&#39;t exist&quot;)
+● Message: The messages with different entities is very similar to each other. It looks like that: _&quot;\&lt;entity name\&gt;_ does not exist by this id: <entity id> (Example: &quot;The _discount_ does not exist by this id: _5_&quot; or &quot;The _comment_ with entered id doesn&#39;t exist&quot;)
 
 33. PlaceStatusException
 
